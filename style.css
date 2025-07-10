@@ -124,3 +124,56 @@ footer {
 .nav a:hover {
   color: #cceeff;
 }
+
+
+.hero {
+  background-color: #00334e;
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap-reverse; /* Ensures text appears before image on mobile */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid #cceeff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bio {
+  max-width: 600px;
+  text-align: left;
+}
+
+.news-panel {
+  margin-top: 40px;
+  background-color: #ffffff;
+  color: #00334e;
+  border-top: 2px solid #cceeff;
+  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.news-panel h2 {
+  margin-top: 0;
+  color: #004c6d;
+}
+
+.news-panel ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}

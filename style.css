@@ -100,3 +100,27 @@ footer {
   padding-left: 20px;
   line-height: 1.6;
 }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #004c6d;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  gap: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: #cceeff;
+}

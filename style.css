@@ -1,20 +1,18 @@
-body {
+/* -------------------------
+   Global Styles
+------------------------- */
+html, body {
+  height: 100%;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   color: #333;
+  display: flex;
+  flex-direction: column;
 }
-
-header.hero {
-  background-color: #00334e;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-
 
 main {
+  flex: 1;
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
@@ -30,122 +28,9 @@ h2 {
   padding-bottom: 5px;
 }
 
-
-
-.hero-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.profile-pic {
-  max-width: 100%;
-  height: auto;
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #cceeff;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.bio {
-  max-width: 600px;
-  text-align: left;
-}
-
-.news-panel {
-  margin-top: 40px;
-  background-color: #ffffff;
-  border-top: 2px solid #cceeff;
-  padding: 20px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.news-panel h2 {
-  margin-top: 0;
-  color: #004c6d;
-}
-
-.news-panel ul {
-  padding-left: 20px;
-  line-height: 1.6;
-}
-
-
-
-
-.hero {
-  background-color: #00334e;
-  color: white;
-  padding: 60px 20px;
-}
-
-.hero-container {
-  display: flex;
-  flex-wrap: wrap-reverse; /* Ensures text appears before image on mobile */
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.profile-pic {
-  width: 180px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 4px solid #cceeff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.bio {
-  max-width: 600px;
-  text-align: left;
-}
-
-.news-panel {
-  margin-top: 40px;
-  background-color: #ffffff;
-  color: #00334e;
-  border-top: 2px solid #cceeff;
-  padding: 20px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.news-panel h2 {
-  margin-top: 0;
-  color: #004c6d;
-  text-align: left;
-}
-
-.news-list {
-  max-height: 180px; /* Limit height */
-  overflow-y: auto;  /* Scrollbar if too many items */
-  padding-right: 10px;
-}
-
-.news-list ul {
-  padding-left: 20px;
-  margin: 0;
-  line-height: 1.6;
-  text-align: left;
-}
-
-
-
+/* -------------------------
+   Navigation Bar
+------------------------- */
 .nav {
   position: sticky;
   top: 0;
@@ -180,21 +65,135 @@ h2 {
   color: #cceeff;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+/* -------------------------
+   Hero Section
+------------------------- */
+.hero {
+  background-color: #00334e;
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap-reverse; /* Bio first on mobile */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-main {
-  flex: 1;
+.bio {
+  max-width: 600px;
+  text-align: left;
 }
 
+/* -------------------------
+   Profile Picture
+------------------------- */
+.profile-pic {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid #cceeff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 100%;        /* Prevents overflow on mobile */
+  height: 240px;           /* Keeps aspect ratio on resize */
+}
+
+
+/* -------------------------
+   Recent News Panel
+------------------------- */
+.news-panel {
+  margin-top: 40px;
+  background-color: #ffffff;
+  color: #00334e;
+  border-top: 2px solid #cceeff;
+  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.news-panel h2 {
+  margin-top: 0;
+  color: #004c6d;
+  text-align: left;
+}
+
+.news-list {
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.news-list ul {
+  padding-left: 20px;
+  margin: 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* -------------------------
+   Footer
+------------------------- */
 footer {
   background-color: #eee;
   text-align: center;
   padding: 20px;
   color: #666;
   margin-top: auto;
+}
+
+/* -------------------------
+   Responsive Design
+------------------------- */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio {
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .news-panel {
+    padding: 15px;
+  }
+
+  .news-list {
+    max-height: none;
+    overflow: visible;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 16px;
+  }
 }

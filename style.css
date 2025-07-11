@@ -93,15 +93,15 @@ h2 {
    Profile Picture
 ------------------------- */
 .profile-pic {
-  width: 180px;
-  height: 240px;
+  width: 180px !important;
+  height: 240px !important;
   object-fit: cover;
   border-radius: 8px;
   border: 4px solid #cceeff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  max-width: 100%;        /* Prevents overflow on mobile */
-  height: 240px;           /* Keeps aspect ratio on resize */
+  display: block;
 }
+
 
 
 /* -------------------------

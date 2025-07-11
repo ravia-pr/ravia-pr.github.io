@@ -2,22 +2,176 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Research | Ravi Anand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research – Ravi Anand</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Include styling for buttons and search -->
+  <style>
+  .bib-button, .abstract-toggle {
+    margin: 6px 4px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    background-color: #e0f3ff;
+    border: 1px solid #004c6d;
+    color: #004c6d;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .bib-button:hover, .abstract-toggle:hover {
+    background-color: #cceeff;
+  }
+  .search-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .search-box input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .abstract-content {
+    display: none;
+    margin-top: 6px;
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-left: 4px solid #00334e;
+  }
+  </style>
 </head>
 <body>
+  <!-- Search Publications -->
+  <div class="search-box">
+    <input type="text" id="pubSearch" onkeyup="searchPublications()" placeholder="Search publications...">
+  </div>
+
   <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="misc.html">Misc</a>
-    <a href="gallery.html">Gallery</a>
+    <div class="nav-container">
+      <div class="nav-title">Ravi Anand</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="misc.html">Misc</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>
   </nav>
 
-  <main>
-    <section>
-      <h2>Research</h2>
-      <p>[Put your research interests, papers, or links here]</p>
+  <main class="fade-in">
+    <h1 class="section-title">Research Focus</h1>
+
+    <div class="research-grid">
+      <div class="research-card">
+        <img src="https://undraw.co/api/illustrations/undraw_data_trust.svg" alt="Classical">
+        <h3>Classical Cryptanalysis</h3>
+        <p>Traditional attacks like differential, linear, and integral cryptanalysis applied to block ciphers.</p>
+      </div>
+      <div class="research-card">
+        <img src="https://undraw.co/api/illustrations/undraw_quantum_computing.svg" alt="Quantum">
+        <h3>Quantum Cryptanalysis</h3>
+        <p>Grover-based and quantum SAT techniques to analyze symmetric-key primitives in the quantum model.</p>
+      </div>
+      <div class="research-card">
+        <img src="https://undraw.co/api/illustrations/undraw_machine_learning.svg" alt="ML">
+        <h3>ML-based Cryptanalysis</h3>
+        <p>Deep learning models to uncover biases, distinguishers, or keys in modern cipher structures.</p>
+      </div>
+      <div class="research-card">
+        <img src="https://undraw.co/api/illustrations/undraw_secure_login.svg" alt="Design">
+        <h3>Design of Symmetric Ciphers</h3>
+        <p>Building efficient, secure block ciphers and AEAD schemes tailored for low-power embedded systems.</p>
+      </div>
+    </div>
+
+    <section class="publications-section">
+      <h2>Publications</h2>
+
+      <!-- Journals -->
+      <details open>
+        <summary><strong>Journal Articles</strong></summary>
+        <ul class="pub-list">
+          <li>
+            <strong>Anand, R.</strong>, Subhadeep Banik, Andrea Caforio, Tatsuya Ishikawa, Takanori Isobe, Fukang Liu, Kazuhiko Minematsu, Mostafizar Rahman, and Kosei Sakamoto.<br>
+            <em>Gleeok: A Family of Low-Latency PRFs and its Applications to Authenticated Encryption.</em><br>
+            IACR TCHES 2024.2 (2024), pp. 545–587.<br>
+            <a href="https://doi.org/10.46586/tches.v2024.i2.545-587" target="_blank">[DOI]</a>
+            <button class="bib-button" onclick="downloadBibtex(`@article{tches2024gleeok, author = {Anand, Ravi and Banik...}, title={Gleeok...}, journal={IACR TCHES}, year={2024}}`)">BibTeX</button>
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="abstract-content">
+              In this paper, we propose a new family of low‑latency pseudorandom functions (PRFs), dubbed Gleeok... achieving ~360 ps latency on 15 nm hardware.
+            </div>
+          </li>
+
+          <li>
+            <strong>Anand, R.</strong>, Shibam Ghosh, Takanori Isobe, Rentaro Shiba.<br>
+            <em>Quantum Key Recovery Attacks on 4‑round Iterated Even‑Mansour with Two Keys.</em><br>
+            ISC 2024 / Cryptology ePrint 2024/1278.<br>
+            <a href="https://eprint.iacr.org/2024/1278" target="_blank">[ePrint]</a>
+            <button class="bib-button" onclick="downloadBibtex(`@misc{eprint2024-1278, author={Anand, Ravi ...}, title={Quantum Key Recovery...}, year={2024}, url={https://eprint.iacr.org/2024/1278}}`)">BibTeX</button>
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="abstract-content">
+              In this paper, we propose quantum key recovery attacks on 4‑round IEM... outperforming generic Grover search complexity via Simon’s algorithm.
+            </div>
+          </li>
+
+        </ul>
+      </details>
+
+      <!-- Conferences -->
+      <details open>
+        <summary><strong>Conference Papers</strong></summary>
+        <ul class="pub-list">
+          <li>
+            <strong>Anand, R.</strong>, Subhadeep Banik, Andrea Caforio, Kazuhide Fukushima, Takanori Isobe, Shisaku Kiyomoto, Fukang Liu, Yuto Nakano, Kosei Sakamoto, and Nobuyuki Takeuchi.<br>
+            <em>An Ultra-High Throughput AES‑based Authenticated Encryption Scheme for 6G: Design and Implementation.</em><br>
+            ESORICS 2023 (LNCS 14344), pp. 229–248.<br>
+            <a href="https://doi.org/10.1007/978-3-031-50594-2_12" target="_blank">[DOI]</a>
+            <button class="bib-button" onclick="downloadBibtex(`@inproceedings{esensics2023aes, ...}`)">BibTeX</button>
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="abstract-content">
+              [Abstract placeholder – add if desired]
+            </div>
+          </li>
+        </ul>
+      </details>
     </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Ravi Anand</p>
+  </footer>
+
+  <script>
+  function toggleAbstract(btn) {
+    const content = btn.nextElementSibling;
+    const isVisible = content.style.display === 'block';
+    content.style.display = isVisible ? 'none' : 'block';
+    btn.innerText = isVisible ? 'Show Abstract' : 'Hide Abstract';
+  }
+
+  function downloadBibtex(entry) {
+    const blob = new Blob([entry], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = "citation.bib";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  function searchPublications() {
+    const input = document.getElementById("pubSearch").value.toLowerCase();
+    const items = document.querySelectorAll(".pub-list li");
+    items.forEach(li => {
+      const text = li.textContent.toLowerCase();
+      li.style.display = text.includes(input) ? "" : "none";
+    });
+  }
+  </script>
+
+
+
+
 </body>
 </html>

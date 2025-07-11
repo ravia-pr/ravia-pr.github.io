@@ -6,11 +6,12 @@
   <title>Ravi Anand</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
-      <div class="nav-spacer"></div>
+      <div class="nav-title">Ravi Anand</div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -21,32 +22,49 @@
   </nav>
 
   <!-- Hero -->
-  <header class="hero" id="hero">
-    <div class="hero-container">
+  <header class="hero">
+    <div class="hero-container fade-in">
+      <img src="profile.jpg" alt="Ravi Anand" class="profile-pic" />
       <div class="bio">
-        <h1>Ravi Anand</h1>
+        <h1>Dr. Ravi Anand</h1>
         <p>Assistant Professor, IIIT Delhi</p>
         <p>
           I work on symmetric cryptography, quantum cryptanalysis, and machine learning-based security.
           I completed my PhD from IIT Kharagpur and a postdoc at the University of Hyogo, Japan under Prof. Takanori Isobe.
         </p>
-      </div>
-      <img src="pic1.JPG" alt="Ravi Anand" class="profile-pic" />
-    </div>
 
-    <div class="news-panel">
-      <h2>Recent News</h2>
-      <div class="news-list">
-        <ul>
-          <li><strong>July 2025:</strong> Gave invited talk at IACR Summer School.</li>
-          <li><strong>June 2025:</strong> Paper accepted at CRYPTO 2025.</li>
-          <li><strong>May 2025:</strong> Joined PC of ACNS 2026.</li>
-          <li><strong>April 2025:</strong> Guest lecture at ISI Kolkata.</li>
-          <li><strong>March 2025:</strong> Started new project on quantum malware.</li>
+        <ul class="interests">
+          <li>Symmetric Cryptography</li>
+          <li>Quantum Cryptanalysis</li>
+          <li>ML for Security</li>
         </ul>
+
+        <a href="mailto:ravi.anand@iiitd.ac.in" class="contact-button">Contact Me</a>
+
+        <div class="social-links">
+          <a href="https://scholar.google.com/citations?user=ZB6aUc0AAAAJ" target="_blank">📚 Scholar</a>
+          <a href="https://dblp.org/pid/203/4259.html" target="_blank">📄 DBLP</a>
+          <a href="https://github.com/raviro" target="_blank">🐙 GitHub</a>
+          <a href="https://www.linkedin.com/in/ravi-anand/" target="_blank">💼 LinkedIn</a>
+        </div>
       </div>
     </div>
   </header>
+
+  <!-- Recent News -->
+  <section class="news-panel fade-in">
+    <h2>Recent News</h2>
+    <div class="news-list">
+      <ul>
+        <li><strong>July 2025:</strong> Gave invited talk at IACR Summer School.</li>
+        <li><strong>June 2025:</strong> Paper accepted at CRYPTO 2025.</li>
+        <li><strong>May 2025:</strong> Joined PC of ACNS 2026.</li>
+        <li><strong>April 2025:</strong> Guest lecture at ISI Kolkata.</li>
+        <li><strong>March 2025:</strong> Started new project on quantum malware.</li>
+      </ul>
+    </div>
+    <p class="news-more"><a href="news.html">See all updates →</a></p>
+  </section>
 
   <!-- Footer -->
   <footer>

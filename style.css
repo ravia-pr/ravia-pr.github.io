@@ -72,10 +72,12 @@ h2 {
    Hero Section
 ------------------------- */
 .hero {
-  background: linear-gradient(135deg, #00334e, #005f7f);
-  color: white;
+  background: linear-gradient(135deg, #f7f7f7, #ececec); /* very subtle shift */
+  color: #00334e;
   padding: 60px 20px;
 }
+
+
 
 .hero-container {
   display: flex;

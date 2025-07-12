@@ -322,6 +322,25 @@ details summary::after {
   float: right;
 }
 
+.pub-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.pub-list li {
+  background-color: #fefefe;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #cceeff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+}
+
+.pub-list li:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* Fade-in animation */
 .fade-in {
   animation: fadeIn 0.6s ease-in-out;

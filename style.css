@@ -5,8 +5,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fcfcfc;
-  color: #333;
+  background-color: #fdfaf7;
+  color: #12343b;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -21,8 +21,8 @@ h1, h2 {
 }
 
 h2 {
-  color: #00334e;
-  border-bottom: 2px solid #cceeff;
+  color: #2d545e;
+  border-bottom: 2px solid #c89666;
   padding-bottom: 5px;
 }
 
@@ -30,7 +30,7 @@ h2 {
    Navigation Bar
 ------------------------- */
 .nav {
-  background-color: #00334e;
+  background-color: #12343b;
   color: white;
   padding: 12px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -58,26 +58,24 @@ h2 {
 }
 
 .nav-links a {
-  color: white;
+  color: #e1b382;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #cceeff;
+  color: #ffffff;
 }
 
 /* -------------------------
    Hero Section
 ------------------------- */
 .hero {
-  background: linear-gradient(135deg, #f7f7f7, #ececec); /* very subtle shift */
-  color: #00334e;
+  background: linear-gradient(135deg, #f9f5f2, #f4ede7);
+  color: #12343b;
   padding: 60px 20px;
 }
-
-
 
 .hero-container {
   display: flex;
@@ -98,8 +96,8 @@ h2 {
   height: 240px;
   object-fit: cover;
   border-radius: 8px;
-  border: 4px solid #cceeff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border: 4px solid #c89666;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
 /* -------------------------
@@ -109,8 +107,8 @@ h2 {
   display: inline-block;
   margin: 15px 0;
   padding: 10px 18px;
-  background-color: #cceeff;
-  color: #00334e;
+  background-color: #c89666;
+  color: #12343b;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -118,7 +116,7 @@ h2 {
 }
 
 .contact-button:hover {
-  background-color: #a3d8f4;
+  background-color: #e1b382;
 }
 
 .social-links {
@@ -129,7 +127,7 @@ h2 {
 .social-links a {
   margin-right: 12px;
   text-decoration: none;
-  color: #cceeff;
+  color: #2d545e;
 }
 
 .social-links a:hover {
@@ -137,29 +135,15 @@ h2 {
 }
 
 /* -------------------------
-   Research Interests
-------------------------- */
-.interests {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-  color: #e0f7ff;
-}
-
-.interests li::before {
-  content: "🔹 ";
-}
-
-/* -------------------------
    News Panel
 ------------------------- */
 .news-panel {
   background: white;
-  color: #00334e;
+  color: #2d545e;
   padding: 30px 20px;
   max-width: 1000px;
   margin: 40px auto;
-  border-top: 3px solid #cceeff;
+  border-top: 3px solid #c89666;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
@@ -181,7 +165,7 @@ h2 {
 }
 
 .news-more a {
-  color: #005f7f;
+  color: #2d545e;
   font-size: 0.9rem;
   text-decoration: none;
 }
@@ -194,10 +178,10 @@ h2 {
    Footer
 ------------------------- */
 footer {
-  background-color: #eee;
+  background-color: #12343b;
   text-align: center;
   padding: 20px;
-  color: #666;
+  color: #e1b382;
   margin-top: auto;
 }
 
@@ -240,181 +224,5 @@ footer {
   .nav-links {
     flex-wrap: wrap;
     gap: 10px;
-  }
-}
-
-/* Research Page Styles */
-.section-title {
-  text-align: center;
-  margin: 40px 0 20px;
-  color: #00334e;
-}
-
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  padding: 0 20px;
-  margin-bottom: 40px;
-}
-
-.research-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: transform 0.2s;
-}
-
-.research-card:hover {
-  transform: translateY(-5px);
-}
-
-.research-card img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-}
-
-.research-card h3 {
-  margin: 15px;
-  color: #00334e;
-}
-
-.research-card p {
-  margin: 0 15px 15px;
-  color: #444;
-  font-size: 0.95rem;
-}
-
-/* Research Intro */
-.research-intro {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.research-intro h2 {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  color: #00334e;
-}
-
-/* Grid Layout */
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-/* Individual Cards */
-.research-box {
-  background-color: #fff;
-  padding: 20px;
-  border-left: 4px solid #cceeff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  text-align: left;
-  cursor: pointer;
-}
-
-.research-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-}
-
-
-/* Icon Styling */
-.icon-container {
-  margin-bottom: 10px;
-}
-
-.icon {
-  width: 36px;
-  height: 36px;
-  color: #004c6d;
-}
-
-/* Titles and Text */
-.research-box h3 {
-  margin-top: 0;
-  color: #004c6d;
-  font-size: 1.1rem;
-}
-
-.research-box p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #444;
-}
-
-
-
-/* Publication List */
-.publications-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 0 20px 60px;
-}
-
-.pub-list {
-  list-style-position: inside;
-  padding-left: 0;
-  margin: 10px 0;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-details {
-  margin-bottom: 20px;
-}
-
-details summary {
-  font-size: 1.05rem;
-  cursor: pointer;
-  padding: 8px 0;
-  font-weight: bold;
-  color: #00334e;
-}
-
-details[open] summary::after {
-  content: "▲";
-  float: right;
-}
-
-details summary::after {
-  content: "▼";
-  float: right;
-}
-
-.pub-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.pub-list li {
-  background-color: #fefefe;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-left: 4px solid #cceeff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  border-radius: 6px;
-  transition: box-shadow 0.3s ease;
-}
-
-.pub-list li:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Fade-in animation */
-.fade-in {
-  animation: fadeIn 0.6s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-  .research-card img {
-    height: 120px;
   }
 }

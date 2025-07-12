@@ -285,6 +285,71 @@ footer {
   font-size: 0.95rem;
 }
 
+/* Research Intro */
+.research-intro {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.research-intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #00334e;
+}
+
+/* Grid Layout */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Cards */
+.research-box {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 4px solid #cceeff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: left;
+  cursor: pointer;
+}
+
+.research-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+
+/* Icon Styling */
+.icon-container {
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  color: #004c6d;
+}
+
+/* Titles and Text */
+.research-box h3 {
+  margin-top: 0;
+  color: #004c6d;
+  font-size: 1.1rem;
+}
+
+.research-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+
+
 /* Publication List */
 .publications-section {
   max-width: 900px;

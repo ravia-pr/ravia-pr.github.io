@@ -402,3 +402,67 @@ details summary::after {
     height: 120px;
   }
 }
+
+
+
+/* -------------------------
+   Misc Page Cards
+------------------------- */
+.misc-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.misc-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #2d545e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.misc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.misc-card {
+  background-color: #ffffff;
+  border-left: 4px solid #e1b382;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.misc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.misc-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #12343b;
+}
+
+.misc-card p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.misc-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2d545e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.misc-card a:hover {
+  text-decoration: underline;
+}

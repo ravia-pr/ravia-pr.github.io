@@ -69,6 +69,25 @@ h2 {
 }
 
 /* -------------------------
+   Styled Name in Navbar
+------------------------- */
+.styled-name {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #e1b382; /* Sand Tan */
+  letter-spacing: 0.5px;
+  border-left: 4px solid #c89666; /* Sand Tan Shadow */
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.styled-name:hover {
+  color: #fff;
+}
+
+
+/* -------------------------
    Hero Section
 ------------------------- */
 .hero {

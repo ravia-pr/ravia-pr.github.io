@@ -518,8 +518,8 @@ details summary::after {
 
 /* Image */
 .gallery-item img {
-  width: 180px;
-  height: 240px;
+  width: 260px;
+  height: 180px;
   object-fit: cover;
   border-radius: 8px;
   border: 4px solid #c89666;
@@ -527,6 +527,9 @@ details summary::after {
   display: block;
   margin: 15px auto 0;
 }
+
+
+
 
 /* Caption block */
 

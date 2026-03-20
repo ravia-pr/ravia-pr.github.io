@@ -618,7 +618,7 @@ details summary::after {
 ------------------------- */
 .lab-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* fixed 3 columns */
   gap: 25px;
 }
 
@@ -674,6 +674,19 @@ details summary::after {
   display: block;
 }
 
+/* -------------------------
+   Lab Logo
+------------------------- */
+
+.lab-logo {
+  margin-top: 20px;
+  width: 180px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
+}
 
 /* -------------------------
    PhD Grid

@@ -617,10 +617,31 @@ details summary::after {
    Lab Grid
 ------------------------- */
 
-.lab-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+.lab-card {
+  background-color: #ffffff;
+  border-left: 4px solid #c89666;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+
+  min-height: 140px;   /* ensures rectangular consistency */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .lab-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lab-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Cards */

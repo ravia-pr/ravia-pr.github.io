@@ -618,7 +618,7 @@ details summary::after {
 ------------------------- */
 .lab-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
 }
 

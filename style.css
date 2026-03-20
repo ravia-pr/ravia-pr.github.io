@@ -689,6 +689,23 @@ details summary::after {
 }
 
 /* -------------------------
+   Lab About Text
+------------------------- */
+
+.lab-about-text {
+  max-width: 900px;
+  margin: 30px auto 50px;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #2d545e;
+}
+
+.lab-about-text p {
+  margin-bottom: 15px;
+}
+
+/* -------------------------
    PhD Grid
 ------------------------- */
 

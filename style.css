@@ -689,6 +689,44 @@ details summary::after {
 }
 
 /* -------------------------
+   Lab Header (Logo + Title Row)
+------------------------- */
+
+.lab-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* allows clean stacking on small screens */
+}
+
+.lab-logo {
+  width: 120px;   /* slightly smaller for row layout */
+  height: auto;
+}
+
+.lab-title-text {
+  text-align: left;
+}
+
+.lab-fancy {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.lab-subtitle {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 1.1rem;
+  color: #2d545e;
+}
+
+.lab-subtitle-secondary {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* -------------------------
    Lab About Text
 ------------------------- */
 

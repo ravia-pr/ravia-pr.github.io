@@ -582,5 +582,71 @@ details summary::after {
 }
 
 
+/* -------------------------
+   Lab Title Styling
+------------------------- */
 
+.lab-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.lab-fancy {
+  font-family: 'Marcellus', serif;
+  font-size: 2.8rem;
+  letter-spacing: 1.2px;
+  color: #12343b;
+  margin-bottom: 8px;
+}
+
+/* Devanagari line */
+.lab-subtitle {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 1.2rem;
+  color: #2d545e;
+}
+
+/* Clean readable fallback */
+.lab-subtitle-secondary {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* -------------------------
+   Lab Grid
+------------------------- */
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Cards */
+.lab-card {
+  background-color: #ffffff;
+  border-left: 4px solid #c89666;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.lab-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+}
+
+.lab-card h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  color: #12343b;
+}
+
+.lab-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
 

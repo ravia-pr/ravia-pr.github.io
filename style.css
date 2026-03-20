@@ -668,6 +668,13 @@ details summary::after {
   color: #555;
 }
 
+.lab-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
 /* -------------------------
    PhD Grid
 ------------------------- */

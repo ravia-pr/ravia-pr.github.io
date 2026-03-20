@@ -698,18 +698,21 @@ details summary::after {
   justify-content: center;
   gap: 25px;
   margin-bottom: 30px;
-  flex-wrap: wrap; /* allows clean stacking on small screens */
+  flex-wrap: nowrap; /* allows clean stacking on small screens */
 }
 
 .lab-logo {
   width: 120px;   /* slightly smaller for row layout */
   height: auto;
+  flex-shrink: 0;
 }
 
 .lab-title-text {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
 }
-
 .lab-fancy {
   margin: 0;
   font-size: 2.4rem;
@@ -726,6 +729,17 @@ details summary::after {
   color: #666;
 }
 
+@media screen and (max-width: 700px) {
+  .lab-header {
+    flex-wrap: wrap;       /* allow stacking on small screens */
+    text-align: center;
+  }
+
+  .lab-title-text {
+    text-align: center;
+  }
+}
+
 /* -------------------------
    Lab About Text
 ------------------------- */
@@ -733,7 +747,7 @@ details summary::after {
 .lab-about-text {
   max-width: 900px;
   margin: 30px auto 50px;
-  text-align: center;
+  text-align: left;
   line-height: 1.7;
   font-size: 1rem;
   color: #2d545e;

@@ -681,7 +681,7 @@ details summary::after {
 .lab-logo {
   margin-top: 20px;
   width: 260px;
-  height: auto;
+  height: 260;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -701,11 +701,11 @@ details summary::after {
   flex-wrap: nowrap; /* allows clean stacking on small screens */
 }
 
-.lab-logo {
-  width: 120px;   /* slightly smaller for row layout */
+/* .lab-logo {
+  width: 120px;  
   height: auto;
   flex-shrink: 0;
-}
+} */
 
 .lab-title-text {
   display: flex;

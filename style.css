@@ -119,6 +119,27 @@ h2 {
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
+
+/* -------------------------
+   Lab Logo
+------------------------- */
+
+.lab-logo {
+  /* margin-top: 20px; */
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid #c89666;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15)); */
+}
+
+
+
 /* -------------------------
    Social + Contact
 ------------------------- */
@@ -674,19 +695,7 @@ details summary::after {
   display: block;
 }
 
-/* -------------------------
-   Lab Logo
-------------------------- */
 
-.lab-logo {
-  margin-top: 20px;
-  width: 260px;
-  height: 260;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
-}
 
 /* -------------------------
    Lab Header (Logo + Title Row)
